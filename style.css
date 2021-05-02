@@ -1,0 +1,578 @@
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+</style>
+
+* {
+margin : 0 ;
+padding : 0 ;
+box-sizing: border-box ;
+
+}
+
+body {
+
+margin : 0 ; 
+}
+
+a {
+
+text-decoration : none ;
+
+}
+
+.container {
+
+height : 100vh ;
+width : 2300px ;
+display : flex ;
+
+
+}
+
+.containerslide {
+
+background-image: url("images/Sans titre.png");
+width : 100% ;
+height : 100% ;
+background-size : cover;
+
+}
+
+
+.container p {
+
+position : absolute ;
+top : 15px ;
+left : 90px ;
+color : white ;
+position : fixed ;
+}
+
+
+#image {
+
+width : 60px ;
+height : 60px ;
+position : absolute ;
+top : 20px ;
+left : 20px ;
+position : fixed ;
+}
+
+nav {
+
+width : 100% ;
+height : 95px ;
+position : fixed ;
+transition : all 0.6s ease-out ;
+
+}
+
+.anime-nav {
+background : black ;
+color : white  ;
+border-bottom : 1px solid white ;
+z-index : 5  ;
+}
+
+nav ul {
+
+display : flex ;
+flex-direction: row ;
+list-style-type: none;
+justify-content: center ;
+position : relative ;
+left : 30px ;
+
+}
+
+nav li {
+
+margin-top : 20px ;
+margin-right : 60px ;
+
+}
+
+li {
+
+font-size : 20px ;
+
+}
+
+
+#tennisclub {
+
+font-size : 23px ;
+
+}
+
+a {
+
+color : white ; 
+}
+
+a:hover {
+
+background-color : gold ;
+
+}
+
+.stats {
+position : relative ;
+display : flex ;
+justify-content: center ;
+justify-content: space-around ;
+align-items : center ;
+height : 450px ;
+}
+
+.rond {
+
+width : 180px ;
+height : 180px ;
+border-radius : 90px ;
+border : 2px solid black ;
+position: relative ;
+box-shadow: 10px 5px 5px #4b8248 ;
+background : #e5e5e5 ;
+
+}
+
+#troph {
+height : 80px ;
+width : 80px ;
+}
+
+
+#siff {
+height : 70px ;
+width : 70px ;
+}
+
+.centre {
+
+text-align : center ; 
+transform: translateY(+50%);
+}
+
+.center p {
+
+text-align : center ;
+font-size : 25px ;
+}
+
+.center span {
+
+font-weight : bold ;
+}
+
+
+
+
+
+.actualite {
+width : 100% ;
+height : 800px ;
+background : #4b8248 ;
+
+}
+
+.actualite h1 {
+
+text-align: center ;
+color : white ;
+position : relative ;
+top : 50px ;
+text-transform : uppercase ;
+font-size : 25px ;
+}
+
+.line {
+
+height : 3px ;
+width : 70% ;
+background : white ;
+position : relative ;
+top : 80px ;
+margin : auto ;
+
+}
+
+.cartes {
+
+display : flex ;
+justify-content: space-around ;
+position : relative ;
+top : 200px ;
+}
+
+.carte1 {
+
+height: 450px ;
+width: 300px ;
+background: white ;
+
+}
+
+.slider {
+
+max-width : 280px ;
+margin: 0 auto ;
+padding : 10px ;
+
+}
+
+.slider img {
+
+max-width : 100% ;
+display : none ;
+
+}
+
+img.active {
+
+display : block ;
+animation : fade 0.8s ;  
+}
+
+@keyframes fade {
+   from {
+       opacity:0 ;
+   }
+   to {
+       opacity:1 ;
+
+   }
+
+}
+
+.cont-btn {
+
+width : 99.3% ;
+height : auto ;
+border : 1px solid black ;
+display : flex ; 
+justify-content: center ;
+text-align : center ;
+align-items : center ;
+justify-content : space-evenly ;
+cursor : pointer ;
+}
+
+.btn-nav {
+
+font-size : 20px ;
+}
+
+.carte2 {
+
+height: 450px ;
+width: 300px ;
+background: white ;
+    
+}
+
+.actu {
+
+max-width : 250px ;
+margin : 0 auto ;
+position: relative;
+}
+
+.actu img {
+
+position : absolute ;
+padding-top : 24px ;
+
+}
+
+.carte3 {
+
+height: 450px ;
+width: 300px ;
+background: white ;
+        
+}
+
+.citation {
+
+height : 500px ;
+background-image: url("images/tennisman.png");
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center; 
+flex-direction: column;
+padding: 2vw;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+color :#0f2663 ;
+font-size : 32px ;
+text-transform: uppercase ;
+text-shadow: #e7ea4d 3px 0 10px ;
+font-weight: bold ;
+}
+
+.partenaires {
+
+height : 500px ;
+width : 100% ;
+background : #4b8248 ;
+position : relative ;
+bottom : 17px ;
+
+}
+
+.partenaires h1 {
+
+text-align: center ;
+color : white ;
+position : relative ;
+top : 50px ;
+text-transform : uppercase ;
+font-size : 25px ;
+}
+
+
+.line2 {
+
+height : 3px ;
+width : 70% ;
+background : white ;
+position : relative ;
+bottom : 66px ;
+margin : auto ;
+    
+}
+
+.logos {
+
+width : 100% ;
+display : flex ; 
+justify-content : center ;
+position : relative ;
+top : 180px ;
+
+}
+#federation {
+
+height : 150px ;
+width : 150px ;
+border : 1px solid white ;
+margin-right : 140px ;
+
+}
+
+#wilson {
+
+height : 150px ;
+width : 150px ;
+border : 1px solid white ;
+
+}
+
+#decathlon {
+
+height : 150px ;
+width : 150px ;
+border : 1px solid white ;
+margin-left : 140px ;
+
+}
+
+
+
+
+
+.contact h1  {
+
+text-transform: uppercase ;
+text-align: center ;
+color : black ;
+position : relative ;
+top : 44px ;
+
+
+
+}
+
+.contacter {
+
+display : flex ;
+justify-content: center ;
+justify-content: space-around ;
+position : relative ;
+top : 100px ;
+height : 550px ;
+
+}
+
+.formulaire {
+
+position : relative ;
+height : 480px ;
+width : 887px ;
+
+}
+
+.telephone {
+
+height : 300px ;
+width : 300px ;
+text-align : center ;
+
+}
+
+.adresse {
+
+height : 300px ;
+width : 300px ;
+text-align : center ;
+
+}
+
+
+.telephone p span {
+
+text-decoration : underline ;
+font-weight : bold ;
+
+}
+
+
+
+.adresse p span {
+
+text-decoration : underline ;
+font-weight : bold ;
+
+}
+
+#adr {
+
+height : 30px ;
+width : 30px ;
+position : relative ;
+left : 2px ;
+top : 10px ;
+
+}
+
+
+#tel {
+
+height : 30px ;
+width : 30px ;
+background : white ;
+border : black ;
+position : relative ;
+left : 3px ;
+top : 10px ;
+}
+
+.rond2 {
+
+height : 50px ;
+width : 50px ;
+background : white ;
+border : 1px solid black ;
+border-radius : 25px ;
+margin-left: auto ;
+margin-right: auto ;
+
+}
+
+
+
+.ligne {
+
+height : 2px ;
+width : 100% ;
+background : #a89797 ;
+
+}
+
+h3 {
+
+text-align : center ;
+
+}
+
+.ligne2 {
+
+height : 2px ;
+width : 100% ;
+background : #a89797 ;
+
+}
+
+label {
+    
+display: inline-block;
+width: 90px;
+text-align: right;
+
+}
+
+input {
+
+width : 79% ;
+height : 30px ;
+margin-top : 20px ;
+border : 1px solid black ;
+
+}
+
+textarea {
+
+font-size : 20px ;
+position : relative ;
+top : 15px ;
+text-transform : none ;
+
+}
+
+
+.button {
+position : relative ;
+top : 30px ;
+text-align : center;
+
+}
+
+
+
+
+.footer {
+
+height : 70px ;
+width : 100% ;
+background : #4b8248 ;
+position : relative ;
+top : 65px ;
+
+}
+
+.footer p {
+
+position : relative ;
+top : 28px ;
+left : 400px ;
+
+}
+
+.footer img {
+
+height : 30px ;
+width : 30px ;
+float : right ;
+position : relative ;
+right : 100px ;
+bottom : 15px ;
+
+
+}
+
+
+
