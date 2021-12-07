@@ -22,10 +22,15 @@ text-decoration : none ;
 
 .container {
 
-height : 100vh ;
-width : 2300px ;
-display : flex ;
+height : 100vh;
+width : 100vw;
+display : flex;
 
+}
+
+.container img {
+
+width: 100%;
 
 }
 
@@ -286,12 +291,38 @@ padding-top : 24px ;
 
 }
 
+.actu p {
+
+    position : absolute ;
+    padding-top : 340px ;
+    
+}
+
 .carte3 {
 
 height: 450px ;
 width: 300px ;
 background: white ;
         
+}
+
+.sortierolland img {
+
+    position : absolute;
+    padding-top : 24px;
+    padding-left: 26px;
+    height: 300px;
+    width: 250px;
+
+}
+
+.sortierolland p {
+
+    position : absolute;
+    padding-top : 340px;
+    padding-left: 20px;
+
+
 }
 
 .citation {
@@ -346,6 +377,15 @@ margin : auto ;
     
 }
 
+.linenoir {
+
+    height : 3px;
+    width : 70%;
+    background : black;
+    margin : auto;
+        
+}
+
 .logos {
 
 width : 100% ;
@@ -381,19 +421,13 @@ margin-left : 140px ;
 
 }
 
-
-
-
-
-.contact h1  {
+#contacttennis  {
 
 text-transform: uppercase ;
 text-align: center ;
 color : black ;
-position : relative ;
-top : 44px ;
-
-
+margin-top: 34px;
+margin-bottom: 48px;
 
 }
 
@@ -413,6 +447,22 @@ height : 550px ;
 position : relative ;
 height : 480px ;
 width : 887px ;
+
+}
+
+#bouton {
+
+  background-color: black;
+  height: 50px;
+  width: 180px;
+  border-radius: 60px;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
 
 }
 
@@ -476,6 +526,7 @@ top : 10px ;
 height : 50px ;
 width : 50px ;
 background : white ;
+background-color: white ;
 border : 1px solid black ;
 border-radius : 25px ;
 margin-left: auto ;
@@ -536,17 +587,15 @@ text-transform : none ;
 
 .button {
 position : relative ;
-top : 30px ;
+top : 60px ;
 text-align : center;
 
 }
 
 
-
-
 .footer {
 
-height : 70px ;
+height : 100px ;
 width : 100% ;
 background : #4b8248 ;
 position : relative ;
@@ -554,23 +603,24 @@ top : 65px ;
 
 }
 
+.centrefooter {
+
+    display: flex;
+    justify-content: space-around;
+}
+
 .footer p {
 
-position : relative ;
-top : 28px ;
-left : 400px ;
+color: white;
+margin-top: 40px;
 
 }
 
 .footer img {
 
-height : 30px ;
-width : 30px ;
-float : right ;
-position : relative ;
-right : 100px ;
-bottom : 15px ;
-
+height : 40px ;
+width : 40px ;
+margin-top: 30px;
 
 }
 
