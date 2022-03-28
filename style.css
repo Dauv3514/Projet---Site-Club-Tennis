@@ -12,6 +12,8 @@ box-sizing: border-box ;
 body {
 
 margin : 0 ; 
+overflow-x: hidden;
+
 }
 
 a {
@@ -36,7 +38,7 @@ width: 100%;
 
 .containerslide {
 
-background-image: url("images/Sans titre.png");
+background-image: url("images/Sans titre2.png");
 width : 100% ;
 height : 100% ;
 background-size : cover;
@@ -104,6 +106,21 @@ font-size : 20px ;
 
 }
 
+.anim {
+
+  box-shadow: inset 0 0 0 0 #e7ea4d;
+  color: white;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+}
+
+.anim:hover {
+
+  color: black;
+  box-shadow: inset 20rem 0 0 0 #e7ea4d;
+
+}
+
 
 #tennisclub {
 
@@ -113,12 +130,7 @@ font-size : 23px ;
 
 a {
 
-color : white ; 
-}
-
-a:hover {
-
-background-color : gold ;
+color : white ;
 
 }
 
@@ -219,35 +231,81 @@ background: white ;
 
 }
 
-.slider {
+/* Caroussel */
 
-max-width : 280px ;
-margin: 0 auto ;
-padding : 10px ;
+.carousel-wrapper {
+    height: 260px;
+    position: relative;
+    width: 250px;
+    display: block;
+    margin: 50px auto ;
+    border: 2px solid black;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+  .arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  
+  }
+  .arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  [id^= "item"] {
+    display: none;
+  }
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+    background-image: url("nadal.png");
+    background-size: cover;
+  }
+  .item-2 {
+    background-image: url('jourdec2.jpg');
+    background-size: cover;
+  }
+  .item-3 {
+    background-image: url('jourdec3.jpg');
+    background-size: cover;
+  }
+  
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  } 
 
-}
+.plateau {
 
-.slider img {
-
-max-width : 100% ;
-display : none ;
-
-}
-
-img.active {
-
-display : block ;
-animation : fade 0.8s ;  
-}
-
-@keyframes fade {
-   from {
-       opacity:0 ;
-   }
-   to {
-       opacity:1 ;
-
-   }
+  padding-left: 1rem;
+  padding-right: 1rem;
 
 }
 
@@ -450,22 +508,6 @@ width : 887px ;
 
 }
 
-#bouton {
-
-  background-color: black;
-  height: 50px;
-  width: 180px;
-  border-radius: 60px;
-  color: white;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 15px;
-  cursor: pointer;
-
-}
-
 .telephone {
 
 height : 300px ;
@@ -523,12 +565,8 @@ top : 10px ;
 
 .rond2 {
 
-height : 50px ;
-width : 50px ;
 background : white ;
 background-color: white ;
-border : 1px solid black ;
-border-radius : 25px ;
 margin-left: auto ;
 margin-right: auto ;
 
@@ -585,10 +623,26 @@ text-transform : none ;
 }
 
 
-.button {
+.button2 {
 position : relative ;
 top : 60px ;
 text-align : center;
+
+}
+
+#bouton {
+
+  background-color: black;
+  height: 50px;
+  width: 180px;
+  border-radius: 60px;
+  color: white;
+  padding: 16px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
 
 }
 
